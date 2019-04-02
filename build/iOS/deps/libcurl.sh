@@ -20,8 +20,7 @@ for x in arm64 armv7; do
 		--disable-debug --disable-verbose --disable-dependency-tracking --disable-ftp \
 		--disable-ldap --disable-ldaps --disable-rtsp --disable-proxy --disable-dict \
 		--disable-telnet --disable-tftp --disable-pop3 --disable-imap --disable-smtp \
-		--disable-gopher --disable-sspi --disable-manual --disable-zlib --without-zlib \
-		--with-darwinssl
+		--disable-gopher --disable-sspi --disable-manual --with-darwinssl
 	make -j$(sysctl -n hw.ncpu)
 	cp -f lib/.libs/libcurl.a templib_$x.a
 done

@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.1.26</string>
 	<key>CFBundleVersion</key>
-	<string>41</string>
+	<string>42</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -28,11 +28,11 @@
 		<true/>
 	</dict>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Advertising</string>
+	<string>MultiCraft needs your calendar to provide personalised advertising experience tailored to you</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>MultiCraft needs your location to provide personalised advertising experience tailored to you</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Advertising</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Advertising</string>
+	<string>MultiCraft needs your location to provide personalised advertising experience tailored to you</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
