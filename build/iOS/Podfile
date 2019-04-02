@@ -6,10 +6,10 @@ target 'MultiCraft' do
 	source 'https://github.com/CocoaPods/Specs.git'
 
   pod 'SSZipArchive'
-  pod 'SDVersion', :git => 'https://github.com/skitudeiosdevelopers/SDVersion'
+  pod 'SDVersion', :git => 'https://github.com/MoNTE48/SDVersion'
 
-  pod 'Appodeal/Core', '2.5.0-Beta'
-  pod 'Appodeal/Interstitial', '2.5.0-Beta'
-  pod 'Appodeal/Video', '2.5.0-Beta'
+  pod 'Appodeal/Core', '2.5.2-Beta'
+  pod 'Appodeal/Interstitial', '2.5.2-Beta'
+  pod 'Appodeal/Video', '2.5.2-Beta'
   pod 'PersonalizedAdConsent', :git => 'https://github.com/MultiCraftProject/googleads-consent-sdk-ios'
 end
