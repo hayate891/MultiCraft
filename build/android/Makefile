@@ -89,7 +89,8 @@ FREETYPE_DIR = $(ANDR_ROOT)/deps/freetype
 FREETYPE_LIB = $(FREETYPE_DIR)/objs/.libs/libfreetype.a
 FREETYPE_TIMESTAMP = $(FREETYPE_DIR)/timestamp
 FREETYPE_TIMESTAMP_INT = $(ANDR_ROOT)/deps/freetype_timestamp
-FREETYPE_URL_HTTP = http://download.savannah.gnu.org/releases/freetype/freetype-$(FREETYPE_VERSION).tar.bz2
+FREETYPE_URL_HTTP = https://sourceforge.net/projects/freetype/files/freetype2/2.10.0/freetype-$(FREETYPE_VERSION).tar.bz2
+
 
 ICONV_VERSION = 1.15
 ICONV_DIR = $(ANDR_ROOT)/deps/libiconv
@@ -363,7 +364,6 @@ iconv_download :
 		mv libiconv-${ICONV_VERSION} libiconv;																			\
 		cd libiconv;																																\
 		patch -p1 < ${ANDR_ROOT}/patches/libiconv_android.patch;										\
-		patch -p1 < ${ANDR_ROOT}/patches/libiconv_stdio.patch;            					\
 		export TOOLCHAIN=/tmp/ndk-${TARGET_HOST}-iconv;															\
 		${ANDROID_NDK}/build/tools/make-standalone-toolchain.sh											\
 			--toolchain=${TARGET_TOOLCHAIN}-${COMPILER_VERSION}												\
